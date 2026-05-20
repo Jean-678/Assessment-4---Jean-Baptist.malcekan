@@ -1,0 +1,14 @@
+1- Clone the existing repository
+  Use Git to copy the repository directly to your computer:
+
+  "git clone https://github.com/username/repository.git"
+  This downloads all files, branches, and commit history.
+
+2- Fork the repository
+  Use the Fork button on GitHub to create your own copy of the repository under your account.
+
+  This allows you to:
+
+  keep the original project history
+  make your own modifications
+  push changes to your own repo independently.
