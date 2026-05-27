@@ -2,6 +2,33 @@
 const express = require('express');
 const app = express();
 const visiteur = process.env.visiteur || 'Anonyme';
+const fs = require('fs');
+
+app.get('/secret-check', (req, res) => {
+
+  try {
+
+    const secret = fs.readFileSync(
+      '/etc/secrets/secret-message.txt',
+      'utf8'
+    );
+
+    res.json({
+      status: "secret loaded",
+      length: secret.length
+    });
+
+  }
+
+  catch {
+
+    res.status(500).json({
+      status: "secret missing"
+    });
+
+  }
+
+});
 
 app.get('/health', (req, res) => {
   res.json({
