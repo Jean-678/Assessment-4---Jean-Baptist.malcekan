@@ -47,4 +47,4 @@ jobs:
 
         env:
 
-          CI_SECRET_MESSAGE: ${{ secrets.CI_SECRET_MESSAGE }}
+          CI_SECRET_MESSAGE: ${{ secrets.CI_SECRET_MESSAGE }}    
